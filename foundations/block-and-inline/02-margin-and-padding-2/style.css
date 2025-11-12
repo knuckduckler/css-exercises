@@ -4,24 +4,38 @@ body {
 }
 
 .card {
-  width: 400px;
+  width: 450px;
   background: #fff;
   margin: 16px auto;
+  padding: 10px;
 }
 
-.title {
+.title,
+.content,
+.button-container {
   background: #e3f4ff;
-}
-
-.content {
-  background: #e3f4ff;
+  margin: 10px 0px 0px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .button-container {
-  background: #e3f4ff;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  padding: 5px 16px;
+  margin: 0 auto;
 }
+
+/* Per the readme file, this is *close enough* to
+what the desired-outcome.png communicates.
+
+The solution did not combine classes and therefor had
+some more nuanced differences.
+
+i.e. margins between boxes were handled individually at
+8px on the bottom, and padding varied. */
