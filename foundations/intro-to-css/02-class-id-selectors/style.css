@@ -1,1 +1,30 @@
-/* Add CSS Styling */
+/* Add CSS Styling 
+
+* **All odd numbered elements**: a light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` with `sans-serif` as a fallback
+* **The second element**: blue text and a font size of 36px
+* **The third element**: in addition to the styles for all odd numbered elements, add a font size of 24px
+* **The fourth element**: a light green background, a font size of 24px, and bold */
+
+/* Even though all 3 <p> elements share this style, it is assigned to a class,
+which they all share, instead of applying the style to p */
+.red {
+    background-color: rgb(232, 117, 144);
+    font-family: Verdana, 'DejaVu Sans', sans-serif;
+}
+
+/* Altered after checking soloution. Third and Fourth Element have the same font size,
+and it can be called as a shared class. */
+.adjust-font-size {
+    font-size: 24px;
+}
+
+div#second {
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+/* font-size is now called from the adjust-font-size class */
+div#fourth {
+    background-color: rgb(10, 245, 20);
+    font-weight: bold;
+}
